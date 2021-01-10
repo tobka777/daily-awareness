@@ -2,6 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Access App
+Website: [http://localhost:3000/](http://localhost:3000/)
+Database frontend (changes are not tracked): [http://localhost:8090/](http://localhost:8090/)
+Database frontend (changes are tracked): `hasura console --project hasura-migrations &`
+
 ## Available Scripts
 
 In the project directory, you can run:

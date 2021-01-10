@@ -1,1 +1,6 @@
-[]
+- table:
+    schema: public
+    name: messages
+- table:
+    schema: public
+    name: user
