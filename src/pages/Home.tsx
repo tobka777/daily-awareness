@@ -37,18 +37,21 @@ function Home() {
         return <div className={css({
           font: "18px Arial Black, sans-serif",
           fontWeight: 900,
-          lineHeight: "28px",
+          lineHeight: "4vw",
           margin: 0,
-          padding: "40vh 40px 0 40px",
+          padding: "40px",
           textAlign: "center",
-          textTransform: "uppercase",
+          //textTransform: "uppercase",
           width: '100%',
-          fontSize: '5vw',
+          fontSize: '4vw',
           //background: 'Aquamarine', 
           background: '#'+Math.random().toString(16).substr(-6), 
-          color: '#16161d'
+          color: '#16161d',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         })}>
-          {msg.message}
+           {msg.message}
         </div>
       }
     };
