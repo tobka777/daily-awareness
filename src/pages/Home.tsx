@@ -26,7 +26,10 @@ function Home() {
     setHeight(window.innerHeight);
   });
 
-  const { loading, error, data } = useQuery(GET_MESSAGES);
+  const { loading, error, data } = useQuery(GET_MESSAGES, {
+    variables: {},
+    pollInterval: 10000,
+  });
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
