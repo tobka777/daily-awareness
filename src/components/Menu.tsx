@@ -5,9 +5,11 @@ import {default as MenuUI} from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import { useFela } from 'react-fela';
 
 function Menu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const { css } = useFela();
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -17,7 +19,11 @@ function Menu() {
     setAnchorEl(null);
   };
 
-  return <div>
+  return <div className={css({
+    position: 'fixed',
+    zIndex: 2000,
+    right: 0
+  })}>
     <IconButton
         aria-label="more"
         aria-controls="simple-menu"
